@@ -1,15 +1,13 @@
 # Show info on data point usecase
 
-```puml
-@startuml
+```mermaid
+sequenceDiagram
 
-actor User as U
-participant System as S
+actor U as User
+participant S as System
 
-=== Show Map ==
+note over U, S: Show Map
 
-S -> U : Click on a data point
-U -> S : Show a popup with more infos
-
-@enduml
+S ->> U : Click on a data point
+U ->> S : Show a popup with more infos
 ```

@@ -1,14 +1,13 @@
 # Show data over time usecase
-```puml
-@startuml
+```mermaid
+sequenceDiagram
 
-Actor User as U
-Participant System as S
+actor U as User
+participant S as System
 
-=== Show Map ==
+note over U, S: Show Map
 
-U -> S : Select the date
-S -> U : Show and update data until this date on the map
+U ->> S : Select the date
+S ->> U : Show and update data until this date on the map
 
-@enduml
 ```

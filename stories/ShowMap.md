@@ -1,16 +1,13 @@
 # Show Map usecase
 
-```puml
-@startuml
+```mermaid
+sequenceDiagram
 
-Actor User as U
-Participant System as S
-
-group Show map
-...
-    U -> S : Request the map
-    S -> U : Show the map
-...
-end
-@enduml
+    actor U as User
+    participant S as System
+    
+    opt Show Map
+        U ->> S : Request the map
+        S ->> U : Show the map
+    end
 ```
