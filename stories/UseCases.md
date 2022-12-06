@@ -15,6 +15,7 @@ rectangle "Systeme" {
     usecase "Show infos on a data point" as UC7
     usecase "Export data" as UC8
     usecase "Send feedback" as UC9
+    usecase "Prevision" as UC10
 }
 
 fc --> UC1
@@ -27,6 +28,7 @@ UC1 <.-- UC5
 UC1 <.-- UC6
 UC1 <.-- UC7
 UC1 <.-- UC8
+UC1 <.-- UC10
 
 @enduml
 ```
