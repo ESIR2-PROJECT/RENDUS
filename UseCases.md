@@ -18,7 +18,7 @@ actor "User" as fc
 
 rectangle "Système" {
     usecase "Show map" as UC1
-    usecase "Zoom, pan and move the map" as UC2
+    usecase "Zoom or pan the map" as UC2
     usecase "Show data on the map" as UC3
     usecase "Show data over time" as UC4
     usecase "Show data near the user" as UC5
@@ -29,12 +29,15 @@ rectangle "Système" {
 }
 
 fc --> UC1
-fc --> UC2
-fc --> UC3
-fc --> UC4
-fc --> UC5
-fc --> UC6
-fc --> UC7
-fc --> UC8
+fc --> UC9
+
+UC1 <.-- UC2
+UC1 <.-- UC3
+UC1 <.-- UC4
+UC1 <.-- UC5
+UC1 <.-- UC6
+UC1 <.-- UC7
+UC1 <.-- UC8
+
 
 ```
