@@ -24,6 +24,8 @@ rectangle "Système" {
     usecase "Show data near the user" as UC5
     usecase "Select datasets" as UC6
     usecase "Show infos on a data point" as UC7
+    usecase "Export data" as UC8
+    usecase "Send feedback" as UC9
 }
 
 fc --> UC1
@@ -33,5 +35,6 @@ fc --> UC4
 fc --> UC5
 fc --> UC6
 fc --> UC7
+fc --> UC8
 
 ```
