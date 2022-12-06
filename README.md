@@ -6,6 +6,7 @@ La liste des livrables :
   - [FrontEnd](https://github.com/ESIR2-PROJET/FRONTEND)
   - [BackEnd](https://github.com/ESIR2-PROJET/BACKEND)
 - Le Document [Respect des exigences](Exigence.md)
+- Le Document [User Stories](UseCases.md)
 - Le Document [Liste des fonctionnalité](Fonctionnalite.md)
 - Le Document [Solution proposée](Solution.md)
 - Le Document [Analyse et conception](Analyse.md)
