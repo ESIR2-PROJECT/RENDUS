@@ -11,12 +11,13 @@
 
 
 ```puml
+@startuml
 
 left to right direction
 
 actor "User" as fc
 
-rectangle "Système" {
+rectangle "Systeme" {
     usecase "Show map" as UC1
     usecase "Zoom or pan the map" as UC2
     usecase "Show data on the map" as UC3
@@ -39,5 +40,16 @@ UC1 <.-- UC6
 UC1 <.-- UC7
 UC1 <.-- UC8
 
-
+@enduml
 ```
+
+## User stories :
+- [Export data](stories/ExportData.md)
+- [Scenario example](stories/Scenario.md)
+- [Select DataSet](stories/SelectDataSet.md)
+- [Send FeedBack](stories/SendFeedback.md)
+- [Show data near user](stories/ShowDataNearUser.md)
+- [Show data over time](stories/ShowDataOverTime.md)
+- [Show info on datapoint](stories/ShowInfoOnDataPoint.md)
+- [Show map](stories/ShowMap.md)
+- [Zoom and pan](stories/ZoomPan.md)
