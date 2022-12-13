@@ -4,8 +4,8 @@ public class Borne {
     String nomEnseigne;
     Station station;
     String priseTypeEf;
-    Date[] horaires;
-    String dateMiseEnService;
+    Horaire[] horaires;
+    Date dateMiseEnService;
     int datagouv_dataset_id;
     int datagouv_resource_id;
     String datagouv_organization_or_owner;
@@ -15,6 +15,10 @@ public class Borne {
     double consolidatedIsCodeInseeVerified;
 }
 
+class Horaire {
+    Date dateDebut;
+    Date dateFin;
+}
 class Station {
     String nomStation;
     String adresseStation;
@@ -27,4 +31,29 @@ class Coordonnees {
 class Ville {
     String commune;
     String codePostal;
+}
+
+class Trafic {
+    Date dateReferentiel;
+    String route;
+    int longueur;
+    double xD;
+    double zD;
+    int anneeMesureTrafic;
+    String TMJA;
+}
+
+class Immatriculation {
+    int departement;
+    int elecHydro;
+    int hybrRechargeable;
+    int total;
+}
+
+class StockVehicule {
+    int codeGeo;
+    int libGeo;
+    Date dateArrete;
+    int nbVehRechargeableBesoin;
+    int communeGeom;
 }
