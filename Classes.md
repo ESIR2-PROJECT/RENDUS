@@ -1,7 +1,25 @@
 # Class diagram
 
 ```mermaid
+
 classDiagram
+
+class DataService {
+    getAllBornes()
+    getBornesUntil(Date d)
+}
+
+class TimeLineComponent {
+    Date date
+}
+
+class MapComponent {
+    TimeLineComponent end
+    Date start
+
+    onUpdate()
+}
+
 class Borne {
     String nomEnseigne
     Station station
@@ -32,19 +50,18 @@ class Ville {
     String commune
     String codePostal
 }
-class Trafic {
+class Traffic {
     Date dateReferentiel
     String route
     int longueur
-    double xD
-    double zD
+    Coordonnees coordonnees
     int anneeMesureTrafic
-    String TMJA
+    double TotalMoyenJournalierAnnuel
 }
 class Immatriculation {
     int departement
-    int elecHydro
-    int hybrRechargeable
+    int count_elecHydro
+    int count_hybrRechargeable
     int total
 }
 class StockVehicule {
@@ -58,4 +75,13 @@ Borne --> Station : contains
 Borne --> Horaire : contains
 Borne --> Coordonnees : contains
 Borne --> Ville : contains
+
+DataService --> Borne
+DataService --> Traffic
+DataService --> Immatriculation
+DataService --> StockVehicule
+
+MapComponent ..> DataService
+MapComponent --> TimeLineComponent : contains
+
 ```
