@@ -48,7 +48,24 @@ Nous travaillons sur cette technologie en module de WEB et sommes donc plus à l
 Pour le back-end, nous avons choisi d'utiliser Java car nous avons de l'expérience avec ce langage et en maîtrisons les concepts, en effet, le framework **Spring** nous permettra de gérer les requêtes, nous en profitons aussi pour apprendre de nouvelles choses. 
 
 # Architecture du projet
-![Architecture](assets/architecture.png)
+```mermaid
+graph LR
+    
+    Frontend
+    
+    subgraph Backend
+        Donnees
+        IA
+        DataBase
+        Donnees --> IA
+        Donnees --> DataBase
+        
+        IA --> ...
+    end
+    
+    Frontend --> Donnees
+    
+```
 
 Nous utilisons un conteneur docker comportant le front end sous Angular.
 Ce container sera relié à la MapBox qui permettra d’afficher la carte interactive.
