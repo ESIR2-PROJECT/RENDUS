@@ -53,17 +53,33 @@ graph LR
     
     Frontend
     
+    S[Scheduler]
+    
+    S --> Getter
+    S --> IA
+    
+    
     subgraph Backend
-        Donnees
+        Getter
         IA
-        DataBase
-        Donnees --> IA
-        Donnees --> DataBase
+        API
+        DBobjects
         
-        IA --> ...
+        DataBase
+        Getter --> DataBase
+        API --> DataBase
+        IA <--> API
+        
+        Getter -.-> DBobjects
+        API -.-> DBobjects
     end
     
-    Frontend --> Donnees
+    subgraph External
+        Bornes[Bornes de Recharge]
+    end
+    
+    Frontend --> API
+    Getter --> Bornes
     
 ```
 
