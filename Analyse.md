@@ -55,7 +55,7 @@ graph LR
     
     S[Scheduler]
     
-    S --> Getter
+    S --> Getter[DataHandler]
     S --> IA
     
     
