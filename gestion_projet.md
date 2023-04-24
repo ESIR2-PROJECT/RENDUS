@@ -21,7 +21,7 @@ Ce sprint se concentre principalement sur la création du frontend. C'est celui 
 Quelques données sont écris en brut dans le JavaScript. Ce sprint a permis de voir la faisabilité du projet et d'estimer ce qui sera possible pour le futur.
 
 ## Sprint 2
-Début: 31 janvier
+Début: 31 janvier  
 Fin: 26 février  
 Objectifs : 
 - Réaliser les différents modules de l'architecture 
