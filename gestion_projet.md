@@ -38,7 +38,7 @@ Objectifs : Ajouter un dataset
 Nous voulons maintenant ajouter le dataset du nombre de voitures. Ajouter un dataset et afficher / corréler les données entre elles est une partie longue que nous avons sous-estimée. Effectivement l'architecture nous donne un endroit où télécharger les données et les mettre en base, mais il reste tout le travail de les transcrire en objets, les rendre accessible dans l'API et surtout les afficher sur le front.  
 À la fin de ce sprint, le nombre de vehicules par département est affiché sur la carte.
 
-## Stats
+# Stats
 
 ![Tableau de bord des sprints](doc/roadmap.png)
 
