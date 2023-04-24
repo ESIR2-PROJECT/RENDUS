@@ -3,6 +3,8 @@
 graph
     
     Frontend
+
+    Proxy
     
     
     subgraph Backend
@@ -28,6 +30,8 @@ graph
     Frontend --> API
     Getter --> Bornes
     Getter --> Voitures
+    Proxy --> Frontend
+    Proxy --> API
     
 ```
 
