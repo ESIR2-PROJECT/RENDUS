@@ -1,3 +1,6 @@
+# Rôles
+Chaque membre de l'équipe a touché à toutes les partie du projet. L'orginisation sous forme d'issue a permis de se concentrer sur les taches à effectuer peu importe le sujet.
+
 # Sprints
 ## Sprint 0
 Début: 29 novembre  
