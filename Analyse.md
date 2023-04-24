@@ -16,7 +16,6 @@ On définit plusieurs use cases qu’un utilisateur peut avoir besoin d’effect
 - Montrer une map avec les points de recharge
 - Possible de zoomer ou de dézoomer la map
 - Sélectionner certaines données à afficher 
-- Envoyer un feedback
 - Afficher les données en fonction du temps 
 - Afficher les données à proximité de l’utilisateur 
 - Afficher les informations détaillées sur une donnée
@@ -26,10 +25,7 @@ Pour réaliser notre projet, nous avons besoin de beaucoup de données pour alim
 Tout d'abord, nous avons des informations sur les bornes de recharge pour véhicules électriques. Cela sera sur ce dataset qu’on va principalement récupérer les données pour alimenter notre projet. 
 
 Pour effectuer différentes métriques (nombre de voitures par borne, nombre de bornes par régions, …)  nous possédons d’autre dataset : 
-- Trafic moyen journalier annuel sur le réseau routier national
-- Données sur la population (recensement, …)
-- Données sur les immatriculations des véhicules ( nb de voiture électrique par département)
-- Voitures particulières immatriculées par commune et par type de recharger (nb  de voiture électrique par commune) 
+- Nombre de voiture électriques par département
 
 Dans un premier temps, nous devons définir les champs qui nous intéressent sur chaque dataset pour faire un premier traitement. Puis, nous pourrons sélectionner en fonction des différentes métriques les données utiles à nos calculs. 
 
@@ -41,50 +37,3 @@ Pour la communication, nous utilisons **Discord**, et un drive google comme gest
 Pour le partage du projet, nous avons choisi **GitHub**, notamment pour les possibilités d’intégration continue que fournit la plateforme.
 
 Pour les brainstormings, le design et noter des idées à la volée, nous utilisons **Figma**
-
-# Choix des technologies
-Dans un premier temps, nous ferons un front-end avec **Angular**.
-Nous travaillons sur cette technologie en module de WEB et sommes donc plus à l’aise avec.
-Pour le back-end, nous avons choisi d'utiliser Java car nous avons de l'expérience avec ce langage et en maîtrisons les concepts, en effet, le framework **Spring** nous permettra de gérer les requêtes, nous en profitons aussi pour apprendre de nouvelles choses. 
-
-# Architecture du projet
-```mermaid
-graph LR
-    
-    Frontend
-    
-    S[Scheduler]
-    
-    S --> Getter[DataHandler]
-    S --> IA
-    
-    
-    subgraph Backend
-        Getter
-        IA
-        API
-        DBobjects
-        
-        DataBase
-        Getter --> DataBase
-        API --> DataBase
-        IA <--> API
-        
-        Getter -.-> DBobjects
-        API -.-> DBobjects
-    end
-    
-    subgraph External
-        Bornes[Bornes de Recharge]
-    end
-    
-    Frontend --> API
-    Getter --> Bornes
-    
-```
-
-Nous utilisons un conteneur docker comportant le front end sous Angular.
-Ce container sera relié à la MapBox qui permettra d’afficher la carte interactive.
-Les données seront chargées depuis le back intégré à un autre conteneur docker.
-Ce dernier sera développé en Java sous le framework Spring il sera (?) lié à une base de données MySQL.
-Nous tirons nos données du dataset du gouvernement pour la localisation des bornes de recharge des véhicules électriques. Ce dataset est actualisé tous les jours en temps réel.

@@ -7,6 +7,7 @@ classDiagram
 class DataService {
     getAllBornes()
     getBornesUntil(Date d)
+    getAllDepartments()
 }
 
 class TimeLineComponent {
@@ -50,36 +51,25 @@ class Ville {
     String commune
     String codePostal
 }
-class Traffic {
-    Date dateReferentiel
-    String route
-    int longueur
-    Coordonnees coordonnees
-    int anneeMesureTrafic
-    double TotalMoyenJournalierAnnuel
+
+class Voitures {
+    val codgeo: String
+    val libgeo: String
+    val epci: Int
+    val libepci: String
+    val dateArrete: Date
+    val nbVpRechargeablesEl: Int
+    val nbVpRechargeablesGaz: Int
+    val nbVp: Int
 }
-class Immatriculation {
-    int departement
-    int count_elecHydro
-    int count_hybrRechargeable
-    int total
-}
-class StockVehicule {
-    int codeGeo
-    int libGeo
-    Date dateArrete
-    int nbVehRechargeableBesoin
-    int communeGeom
-}
+
 Borne --> Station : contains
 Borne --> Horaire : contains
 Borne --> Coordonnees : contains
 Borne --> Ville : contains
 
 DataService --> Borne
-DataService --> Traffic
-DataService --> Immatriculation
-DataService --> StockVehicule
+DataService --> Voitures
 
 MapComponent ..> DataService
 MapComponent --> TimeLineComponent : contains
