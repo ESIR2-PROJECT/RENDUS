@@ -57,7 +57,7 @@ En entraînant un modèle de régression linéaire sur le nombre de bornes par a
 
 ![image](https://user-images.githubusercontent.com/108394043/235180056-6119f061-a692-45a7-9b64-fd254ef7a6d6.png)
 
-Nous avons également pu construire les courbes de nouvelles bornes par régions, celles-ci sont disponibles dans ce fichier [suivant](doc/analyseregion)
+Nous avons également pu construire les courbes de nouvelles bornes par régions, celles-ci sont disponibles dans ce fichier [suivant](doc/graphiques_regionaux.png)
 
 
 
