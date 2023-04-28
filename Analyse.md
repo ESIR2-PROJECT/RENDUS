@@ -21,7 +21,6 @@ On définit plusieurs use cases qu’un utilisateur peut avoir besoin d’effect
 - Afficher les données à proximité de l’utilisateur
 - Afficher les informations détaillées sur une donnée
 
-
 # Les données
 Pour réaliser notre projet, nous avons besoin de beaucoup de données pour alimenter notre site et qu’il soit viable. Nous disposons de plusieurs dataset pour effectuer nos analyses. Tout d'abord, nous avons des informations sur les bornes de recharge pour véhicules électriques. Cela sera sur ce dataset qu’on va principalement récupérer les données pour alimenter notre projet.
 
@@ -41,3 +40,24 @@ Pour la communication, nous utilisons **Discord**, et un drive google comme gest
 Pour le partage du projet, nous avons choisi **GitHub**, notamment pour les possibilités d’intégration continue que fournit la plateforme.
 
 Pour les brainstormings, le design et noter des idées à la volée, nous utilisons **Figma**
+
+# Analyse des données récoltées
+
+Comme dit précédemment, le but de la création de cet outil est d'ensuite pouvoir analyser les données à notre disposition et de pouvoir en tirer des conclusion tant en termes d'évolution du nombre de nouvelles bornes que de la position dans lesquelles elles sont et seront à l'avenir. C'est pourquoi nous avons pu réaliser une petite analyse des données en analysant les courbes d'évolution du nombre de nouvelles bornes par année sur toute la France mais également pas région.
+Nous avons sommé le nombre de nouvelles bornes par années afin de pouvoir avoir une meilleure visualisation son évolution. Voici le résultat : 
+
+![image](https://user-images.githubusercontent.com/108394043/235179604-44b0b70c-1e79-47c2-be65-0db297689a3d.png)
+
+
+Comme on peut le constater à partir de l’année 2020 on observe une grande augmentation du nombre de nouvelles bornes et une légère baisse en 2022 qui peut être expliquée avec l’épidémie de 2020 où de nombreuses bornes devant être installées.
+
+Estimation des nouvelles bornes pour l’année 2023 : 
+En entraînant un modèle de régression linéaire sur le nombre de bornes par année, on obtient la projection suivante pour les années à venir :
+
+
+![image](https://user-images.githubusercontent.com/108394043/235180056-6119f061-a692-45a7-9b64-fd254ef7a6d6.png)
+
+Nous avons également pu construire les courbes de nouvelles bornes par régions, celles-ci sont disponibles dans ce fichier [suivant](doc/analyseregion)
+
+
+
