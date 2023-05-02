@@ -58,7 +58,7 @@ En entraînant un modèle de régression linéaire sur le nombre de bornes par a
 ![image](https://user-images.githubusercontent.com/108394043/235180056-6119f061-a692-45a7-9b64-fd254ef7a6d6.png)
 
 Comme nous pouvons le constater le nombre de nouvelles bornes en France devrait dépasser les 30000/an avant 2030, il est donc important d'analyser les besoins et les régions en manque puisque le marché des bornes de recharge connaît une expansion sans nul doute et qui devrait s'accentuer avec la loi d'interdiction de vente de voiture thermique neuve pour 2035. 
-Pour une analyse plus poussée et plus localement, nous avons également produit les courbes de nouvelles bornes par départements, celles-ci sont disponibles dans ce fichier [suivant](doc/graphiques_regionaux.png).
+Pour une analyse plus poussée et plus localement, nous avons également produit les courbes de nouvelles bornes par départements, celles-ci sont disponibles dans ce fichier [suivant](doc/all_plots.pdf).
 
 On peut y voir une forte augmentation dans les départements de l'Allier, les Alpes de Haute-Provence, les Alpes-Maritimes, l'Ardêche et l'Ariège avec une année 2022 ayant vu plus de 2000 nouvelles bornes arriver dans le département tandis que dans Loiret ou la Meuse moins d'une cinquantaine sont présentes. C'est pourquoi il faudra coupler l'analyse de ces données avec les besoins sur le terrain, et cela est rendu possible grâce à la mise à disposition d'une base de données avec le nombre de voitures électriques en France.
 
