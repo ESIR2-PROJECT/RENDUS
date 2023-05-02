@@ -56,7 +56,8 @@ Comme on peut le constater à partir de l’année 2020 on observe une grande au
 En entraînant un modèle de régression linéaire sur le nombre de bornes par année, on obtient une projection de la courbe des nouvelles bornes par année. Cette projection est disponible sur l'image suivante:
 
 
-![image](https://user-images.githubusercontent.com/108394043/235180056-6119f061-a692-45a7-9b64-fd254ef7a6d6.png)
+![image](https://user-images.githubusercontent.com/108394043/235685067-4347870c-56d4-4b80-b60f-d41ce6f0881c.png)
+
 
 Comme nous pouvons le constater le nombre de nouvelles bornes en France devrait dépasser les 30000/an avant 2030, il est donc important d'analyser les besoins et les régions en manque puisque le marché des bornes de recharge connaît une expansion sans nul doute et qui devrait s'accentuer avec la loi d'interdiction de vente de voiture thermique neuve pour 2035. 
 Pour une analyse plus poussée et plus localement, nous avons également produit les courbes de nouvelles bornes par départements, celles-ci sont disponibles dans ce fichier [suivant](doc/all_plots.pdf).
